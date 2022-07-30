@@ -40,7 +40,6 @@ body {
 .header-navigation,
 .contacts-list {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 80px;
 }
@@ -74,6 +73,7 @@ body {
     letter-spacing: 0.03em;
     color: var(--accent-color);
     display: inline-block;
+    margin-right: 93px;
 }
 
 .logo-dark {
