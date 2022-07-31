@@ -35,6 +35,10 @@ body {
     padding: 0px 15px;
     outline: 2px solid rgb(228, 208, 208);
 }
+ul {
+    padding: 0;
+    list-style: none;
+}
 .header,
 .header-nav,
 .header-navigation,
@@ -54,7 +58,6 @@ body {
 
 /*--хедер--*/
 .header {
-    border-color: antiquewhite;
     background-color: #ffffff;
     border-bottom: 1px solid #ececec;
 }
@@ -73,6 +76,8 @@ body {
     letter-spacing: 0.03em;
     color: var(--accent-color);
     display: inline-block;
+}
+.logo.logo-header {
     margin-right: 93px;
 }
 
@@ -95,7 +100,6 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--priamary-color);
-    margin-right: 93px;
 }
 
 .header-link:hover,
@@ -177,9 +181,7 @@ body {
     justify-content: space-between;
     gap: 30px;
 }
-.work-img,
-.work-img,
-.portfolio-img {
+.img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -290,8 +292,18 @@ body {
     display: flex;
     gap: 30px;
 }
+.title-portfolio,
 .section-title-advantages {
-    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .advantages-title {
